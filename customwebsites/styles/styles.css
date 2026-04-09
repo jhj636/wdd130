@@ -329,7 +329,7 @@ footer p {
 }
 .process-msg {
     grid-column: 4/7;
-    background-color: #00BFFF;
+    background-color: #00bfff8c;
     justify-self: center;
     padding: 35px;
     margin: 35px;
@@ -359,19 +359,54 @@ footer p {
 .about-img {
     grid-column: 1/3;
     width: 100%;
+    margin: 100px;
+    border: solid #00BFFF;
 }
 #about-msg {
-    grid-column: 4/7;
+    grid-column: 3/7;
+    margin: 100px;
+    border: solid #00BFFF;
+    padding: 35px;
+    background-color: #333333e2;
+    color: aliceblue;
+}
+#about-msg h1{
+    font-family: 'Montserrat', 'Impact', 'Trebuchet MS';
+    font-size: 3em;
+}
+#about-msg p{
+    font-size: 1.8em;
 }
 #contact-msg {
-    grid-column: 1/4;
+    grid-column: 2/4;
+    border: solid #333333;
+    padding: 35px;
+    background-color: #FFD300;
+}
+#contact-msg h1{
+    font-family: 'Montserrat', 'Impact', 'Trebuchet MS';
+    font-size: 2em;
+}
+#contact-msg p{
+    font-size: 1.4em;
 }
 .contact-img {
-    grid-column: 5/7;
+    grid-column: 4/6;
     width: 100%;
+    border: solid #333333;
 }
 #faq-msg {
     grid-column: 2/6;
+    margin: 35px;
+}
+#faq-msg h1{
+    font-family: 'Montserrat', 'Impact', 'Trebuchet MS';
+    font-size: 3em;
+    background-color: #00BFFF;
+    border: solid #333333;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 25px;
 }
 #faq-msg p{
     font-size: 1.5em;
