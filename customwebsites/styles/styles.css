@@ -382,6 +382,7 @@ footer p {
     border: solid #333333;
     padding: 35px;
     background-color: #FFD300;
+    width: fit-content;
 }
 #contact-msg h1{
     font-family: 'Montserrat', 'Impact', 'Trebuchet MS';
@@ -394,6 +395,7 @@ footer p {
     grid-column: 4/6;
     width: 100%;
     border: solid #333333;
+    justify-self: center;
 }
 #faq-msg {
     grid-column: 2/6;
@@ -511,5 +513,16 @@ footer p {
     }
     .process-msg {
         margin: 0;
+    }
+    .about-grid {
+        display: block;
+        margin: 0;
+    }
+    .about-img {
+        display: none;
+    }
+    .about-img {
+        margin: 0;
+        padding: 0;
     }
 }
