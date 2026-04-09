@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Raleway&family=Roboto');
+/* Global Css : Header, nav, Footer, etc */
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+h2 {
+    font-family: 'Montserrat', 'Impact', 'Trebuchet MS';
+}
+p {
+    font-family: 'Open Sans', 'Roboto', 'Raleway', 'sans-serif';
+}
+
+/* Header */
+header {
+    background-color: #ffd500e9;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    width: 80px;
+    border-radius: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    padding: 35px;
+    font-size: 25px;
+}
+nav a:hover {
+    background-color: #333333;
+    color: white;
+}
+.form {
+    background-color: black;
+    color: #FDF0D5;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #FFD300;
+    color: black;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .social img {
+    padding-top: 15px;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+}
+footer p a:hover{
+    background-color: #333333;
+    color: #FDF0D5;
+    text-decoration: underline;
+}
+footer p {
+    font-size: 1.5em;
+}
+
+/* Home Page CSS */
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+    margin-top: -100px;
+}
+#hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1;
+    background-color: rgba(0, 0, 0, 0.874);
+    margin-top: 40%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #333333;
+}
+.home-title {
+    text-align: center;
+    font-family: 'papyrus', 'Montserrat', 'Impact', 'Trebuchet MS';
+    color: #FFD300;
+    font-size: 3em;
+    padding: 15px;
+}
+#hero-msg h4 {
+    text-align: center;
+    color: #FFD300;
+    font-family: 'Montserrat', 'Impact', 'Trebuchet MS';
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+#intro-box {
+    grid-column: 1/11;
+    background-color: rgba(0, 0, 0, 0.899);
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.intro-msg {
+    color: #FDF0D5;
+    padding: 35px;
+    text-align: center;
+}
+.intro-msg h2 {
+    font-size: 2em;
+}
+.intro-msg p{
+    font-size: 1.5em;
+    line-height: 1.8;
+}
+.intro-list {
+    font-size: 1.8em;
+    background-color: #00BFFF;
+    padding: 35px;
+    margin: 25px;
+    line-height: 1.5em; 
+    border-radius: 25px;
+}
+.intro-list ul{
+    font-family: 'Open Sans', 'Roboto', 'Raleway', 'sans-serif';
+}
+.home-grid img {
+    width: 100%;
+    grid-column: 2/5;;
+    margin: 35px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #333333;
+    align-self: center;
+}
+#hook {
+    grid-column: 6/10;
+    background-color: #FFD300;
+    margin: 35px;
+    padding: 35px;
+    border-radius: 20px;
+    align-self: center;
+}
+#hook h2 {
+    font-size: 2em;
+}
+#hook p{
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.action-box {
+    grid-column: 3/9;
+    border-style: solid;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: space-evenly;
+    margin: 35px;
+    padding: 35px;
+    background-color: #06befb3f;
+}
+.action-box h4 {
+    font-size: 1.3em;
+}
+.contact {
+    padding: 20px;
+    background-color: #333333;
+    color: #FDF0D5;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 25px;
+    align-self: center;
+}
+.contact:hover {
+    background-color: #FDF0D5;
+    color: #333333;
+}
+
+/* Services Page CSS */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+#banner-box {
+    grid-column: 1/7;
+    margin: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.banner-img {
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+.banner-msg {
+    background-color: #333333e4;
+    color: aliceblue;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 35px;
+}
+.banner-msg h1 {
+
+}
+.banner-msg p {
+
+}
+#packages-title {
+    grid-column: 3/5;
+    text-align: center;
+    border-style: solid;
+
+}
+.starter {
+    grid-column: 1/3;
+    border-style: solid;
+}
+.business {
+    grid-column: 3/5;
+    border-style: solid;
+}
+.premium {
+    grid-column: 5/7;
+    border-style: solid;
+}
+.add-ons {
+    grid-column: 3/5;
+    border-style: solid;
+    
+}
+.process-img {
+    grid-column: 1/4;
+    width: 100%;
+}
+.process-msg {
+    grid-column: 4/7;
+}
+
+/* About Me Page */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.about-img {
+    grid-column: 1/3;
+    width: 100%;
+}
+#about-msg {
+    grid-column: 4/7;
+}
+#contact-msg {
+    grid-column: 1/4;
+}
+.contact-img {
+    grid-column: 5/7;
+    width: 100%;
+}
+#faq-msg {
+    grid-column: 3/5;
+}
+
+/*  Media Queries*/
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero-box {
+        margin: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #intro-box {
+        display: block;
+        margin: 0;
+        width: 100%;
+        padding: 5px;
+    }
+    .intro-list ul{
+        font-size: 0.9em;
+    }
+    .home-grid img {
+        width: 100%;
+        margin: auto;
+    }
+}
