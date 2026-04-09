@@ -453,4 +453,25 @@ footer p {
         width: 100%;
         margin: auto;
     }
+    .services-grid{
+        display: block;
+        margin: 0;
+    }
+    #banner-box {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .banner-img {
+        display: none;
+    }
+    .banner-msg {
+        margin: 0;
+    }
+    .process-img {
+        width: 80%;
+    }
+    .process-msg {
+        margin: 0;
+    }
 }
