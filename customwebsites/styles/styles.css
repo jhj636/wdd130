@@ -226,10 +226,10 @@ footer p {
     padding: 35px;
 }
 .banner-msg h1 {
-
+    font-size: 1.5em;
 }
 .banner-msg p {
-
+    font-size: 1.5em;
 }
 #packages-title {
     grid-column: 3/5;
