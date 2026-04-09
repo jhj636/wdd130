@@ -36,12 +36,26 @@
             <img class="contact-img" src="images/icons.jpg" alt="social media icons">
             <section id="faq-msg">
                 <h1>FAQ</h1>
-                <h4>How long does a website take?</h4>
+                <button class="accordion">How long does a website take?</button>
+                <div class="panel">
+                    <p>Most sites take 1–3 weeks depending on size and complexity.</p>
+                </div>
+
+                <button class="accordion">What do I need to provide?</button>
+                <div class="panel">
+                    <p>Any text, images, logos, or brand details you want included. I can help create content if needed</p>
+                </div>
+
+                <button class="accordion">Do you offer updates after launch?</button>
+                <div class="panel">
+                    <p>Yes — I provide ongoing support and maintenance options.</p>
+                </div>
+                <!--<h4>How long does a website take?</h4>---replaced with Accordion above
                 <p>Most sites take 1–3 weeks depending on size and complexity.</p>
                 <h4>What do I need to provide?</h4>
                 <p>Any text, images, logos, or brand details you want included. I can help create content if needed</p>
                 <h4>Do you offer updates after launch? </h4>
-                <p>Yes — I provide ongoing support and maintenance options.</p>
+                <p>Yes — I provide ongoing support and maintenance options.</p>-->
             </section>
         </main>
         <footer>
@@ -64,5 +78,21 @@
             </div>
         </footer>
     </div>
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+    }
+</script>
 </body>
 </html>
